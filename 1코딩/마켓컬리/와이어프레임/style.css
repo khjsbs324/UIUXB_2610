@@ -139,6 +139,19 @@ ul, li {
 }
 .actions {
   width: 250px;
-  display: flex;
+  display: flex; gap: 40px;
   justify-content: flex-end;
+}
+#actions .location,
+#actions .favorite,
+#actions .shopping {
+  font-size: 28px;
+  cursor: pointer;
+}
+/*.location,.favorite,.shopping 
+마우스 올리면 아이콘 색삭 변경*/
+#actions .location:hover,
+#actions .favorite:hover,
+#actions .shopping:hover {
+  color: #5F0080;
 }
