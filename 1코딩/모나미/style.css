@@ -99,13 +99,12 @@ header {
   border-bottom: 1px solid #eaeaea;
 }
 /* 투명도 0 ~ 1 */
-.header-con {
-  flex-direction: column;
-}
 .utmenu {
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+.utmenu-con {
   height: 58px;
+  justify-content: space-between;
 }
 .links {
   display: flex; gap: 12px;
@@ -147,6 +146,49 @@ header {
 }
 .top-bar {
   /* border: 1px solid blue; */
+  border-bottom: 1px solid #eaeaea;
+}
+.topbar-con {
+  justify-content: space-between;
+  height: 89px;
+}
+.logo-box {
+  align-self: center;
+}
+nav > ul {
+  display: flex;
+  height: 100%;
+}
+nav > ul > li {
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-size: 17px; color: #303030;
+  position: relative;
+}
+nav > ul > li:hover {
+  font-weight: 700;
+}
+nav > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 0; height: 2px;
+  background-color: #c40f39;
+  bottom: 0; left: 0;
+  transition: 0.3s;
+}
+nav > ul > li:hover::after {
+  width: 100%;
+}
+.header-util {
+  align-self: center;
+  display: flex; gap: 28px;
+  
+}
+#header-util .search,
+#header-util .menu {
+  color: #303030;
 }
 main {
   border: 1px solid red;
